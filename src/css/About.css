@@ -1,29 +1,90 @@
 .About{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+.About-Layout{
+    display: grid;
+    grid-template-columns: 700px 260px;
+    gap: 3rem;
+    align-items: start;
+    justify-content: center;
+}
 
+.About-header{
+    width: fit-content;
+    margin: 0 auto;
+}
+.About-aside{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 260px;
+    justify-self: center;
 }
 
 .About-title{
-   
+    grid-column: 1 / -1;
+    max-width: 700px;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+     margin-bottom: 2rem;
+     text-align: left;
+     border-bottom: 2px solid #626365;
+     padding-bottom: 0.5rem;
 }
 
 .About-content{
+    justify-self: center;
+    width: 700px;
+    overflow: auto;
+}
+.About-pic img{
+    float: left;
+    width: 260px;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 0 2.25rem 1rem 0;
+    shape-outside: margin-box;
+}
+.About-text p{
     font-size: 1.2rem;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.sidecard{
+    border: 1px solid #626365;
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
-.About-pic{
-
+.sidecard h3{
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #626365;
+    margin-bottom: 0.75rem;
 }
 
-.About-pic img{
+.sidecard a{
     display: block;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
+    font-size: 0.9rem;
+    color: #060708;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
 }
 
-.About-text{
+.sidecard a:hover{
+    text-decoration: underline;
+}
 
+@media (max-width: 900px)
+{
+    .About-Layout{
+        grid-template-columns: 1fr;
+    }
 }

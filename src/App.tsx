@@ -23,7 +23,7 @@ function App() {
                 <li><Link to="/education">Education</Link></li>
                 <li><Link to="/skills">Skills</Link></li>
                 <li><Link to="/services">Services</Link></li>
-                <li><Link to="/portfolio">Portfolio</Link></li>
+                <li><Link to="/Experience">Experience</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
             </div>
@@ -35,7 +35,7 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/Experience" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
