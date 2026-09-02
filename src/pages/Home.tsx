@@ -22,7 +22,7 @@ function Home() {
                         <h2>Software Development, Data Analysis, Statistics, and Data Visualization</h2>
                     </div>
                     <div className="hero-buttons">
-                        <a href={resumePdf} download className= "btn">Download CV</a>
+                        <a href={resumePdf} target="_blank" rel="noopener noreferrer" className= "btn">Download CV</a>
                         <a href="/contact" className="btn">Contact Information</a>
                     </div>
                     <div className="hero-social">

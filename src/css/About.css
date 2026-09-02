@@ -5,10 +5,11 @@
 }
 .About-Layout{
     display: grid;
-    grid-template-columns: 700px 260px;
+    grid-template-columns: minmax(0, 700px) minmax(0, 260px);
     gap: 3rem;
     align-items: start;
     justify-content: center;
+    max-width: 100%;
 }
 
 .About-header{
@@ -19,30 +20,36 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    width: 260px;
+    width: 100%;
+    max-width: 260px;
     justify-self: center;
 }
 
 .About-title{
     grid-column: 1 / -1;
     max-width: 700px;
-    font-size: 2.25rem;
+    width: 100%;
+    justify-self: start;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
     font-weight: 600;
     letter-spacing: -0.01em;
      margin-bottom: 2rem;
      text-align: left;
      border-bottom: 2px solid #626365;
      padding-bottom: 0.5rem;
+     box-sizing: border-box;
 }
 
 .About-content{
     justify-self: center;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     overflow: auto;
 }
 .About-pic img{
     float: left;
-    width: 260px;
+    width: 100%;
+    max-width: 260px;
     aspect-ratio: 4/5;
     object-fit: cover;
     border-radius: 12px;
@@ -76,15 +83,64 @@
     color: #060708;
     text-decoration: none;
     margin-bottom: 0.5rem;
+    overflow-wrap: break-word;
 }
 
 .sidecard a:hover{
     text-decoration: underline;
 }
 
+.sidecard p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #060708;
+    overflow-wrap: break-word;
+    min-width: 0;
+    margin-bottom: 0.5rem;
+}
+
+.sidecard p:last-child{
+    margin-bottom: 0;
+}
+
+.sidecard p span{
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+.sidecard img{
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
 @media (max-width: 900px)
 {
     .About-Layout{
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .About-content,
+    .About-aside{
+        max-width: 700px;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .About{
+        padding: 2.5rem 1.25rem;
+    }
+
+    .About-pic img{
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+        width: 100%;
+        max-width: 260px;
     }
 }

@@ -1,0 +1,185 @@
+.Experience-page {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.Experience-layout {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.Experience-title {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 2rem;
+    text-align: left;
+    border-bottom: 2px solid #626365;
+    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+}
+
+.Experience-content {
+    text-align: left;
+}
+
+.Experience-section-heading {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #626365;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.Experience-content > .Experience-section-heading:first-child {
+    margin-top: 0;
+}
+
+.Education-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.Education-card,
+.Experience-card {
+    border: 1px solid #626365;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.Education-card {
+    flex: 1 1 280px;
+    margin-bottom: 0;
+}
+
+.Education-card h3,
+.Experience-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+}
+
+.Education-degree {
+    font-weight: 500;
+    margin: 0 0 0.25rem;
+}
+
+.Education-date,
+.Project-stack {
+    font-size: 0.85rem;
+    color: #626365;
+    margin: 0 0 0.5rem;
+}
+
+.Experience-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 1rem;
+}
+
+.Experience-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #060708;
+    text-decoration: none;
+    border-bottom: 1px solid #060708;
+    padding-bottom: 2px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.Experience-link:hover {
+    color: #61dafb;
+    border-color: #61dafb;
+}
+
+.Projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.Project-card {
+    border: 1px solid #626365;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Placeholder for future project screenshots — swap this block for an <img> per project. */
+.Project-thumbnail {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: repeating-linear-gradient(
+        45deg,
+        #f2f2f2,
+        #f2f2f2 10px,
+        #e8e8e8 10px,
+        #e8e8e8 20px
+    );
+    border-bottom: 1px solid #626365;
+    color: #626365;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.Project-body {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Project-body h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.35rem;
+}
+
+.Project-body p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 0.75rem;
+}
+
+.Project-body p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .Experience-layout {
+        max-width: 700px;
+    }
+
+    .Projects-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .Experience-page {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .Education-list {
+        flex-direction: column;
+    }
+
+    .Education-card,
+    .Experience-card,
+    .Project-body {
+        padding: 1.1rem 1.25rem;
+    }
+}

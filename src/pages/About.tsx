@@ -2,6 +2,8 @@ import React from 'react';
 import '../css/About.css';
 import AboutPhoto from '../textures/about-pic.png';
 import resume from '../textures/William-Almaguer.pdf';
+import phone from '../textures/phone.png';
+import email from '../textures/email.png';
 function About() {
   return (
     <section className="About">
@@ -23,15 +25,15 @@ function About() {
       <aside className="About-aside">
         <div className="sidecard">
           <h3>Connect</h3>
-          <a href="https://www.linkedin.com/in/william-almaguer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/William10182004" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/william-almaguer-b680432ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/William102004" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.instagram.com/william.almaguer1/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href={resume} target="_blank" rel="noopener noreferrer">Download Resume</a>
+          <a href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
         <div className="sidecard">
           <h3>Contact</h3>
-          <p>Email: William10182004@gmail.com</p>
-          <p>Phone: (786)-797-2876</p>
+          <p><img src={email} alt="Email" /> <a href="mailto:William10182004@gmail.com" target="_blank" rel="noopener noreferrer">William10182004@gmail.com</a></p>
+          <p><img src={phone} alt="Phone" /> <a href="tel:(786)-797-2876" target="_blank" rel="noopener noreferrer">(786)-797-2876</a></p>
         </div>
       </aside>
       </div>
