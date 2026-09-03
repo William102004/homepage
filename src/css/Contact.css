@@ -1,0 +1,130 @@
+.contact-page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.contact-title {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 2rem;
+    text-align: left;
+    border-bottom: 2px solid #626365;
+    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+}
+
+.contact-content h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #626365;
+    margin-bottom: 1rem;
+}
+
+.contact-content h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #626365;
+    margin: 2.5rem 0 1rem;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border: 1px solid #626365;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    color: #060708;
+    text-decoration: none;
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.contact-card:hover {
+    background-color: rgba(6, 7, 8, 0.04);
+    border-color: #060708;
+}
+
+.contact-card img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form label {
+    font-size: 0.85rem;
+    color: #626365;
+    margin-top: 0.75rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font: inherit;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #626365;
+    border-radius: 8px;
+    background: transparent;
+    color: #060708;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #060708;
+}
+
+.contact-form button {
+    margin-top: 1.5rem;
+    align-self: flex-start;
+    padding: 0.65rem 1.5rem;
+    border: 1px solid #060708;
+    border-radius: 8px;
+    background: #060708;
+    color: #fff;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+}
+
+.contact-form button:hover {
+    opacity: 0.85;
+}
+
+.contact-form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.contact-status {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #626365;
+}
+
+@media (max-width: 480px) {
+    .contact-page {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+}
