@@ -1,5 +1,66 @@
 import React from 'react';
 import '../css/Experience.css';
+import ProjectGallery from '../components/ProjectGallery';
+
+import expenseAccounts from '../textures/ExpenseTracker/AccountsPage.png';
+import expenseBudgets from '../textures/ExpenseTracker/Budgets Page.png';
+import expenseLogin from '../textures/ExpenseTracker/LoginScreen.png';
+import expenseMonthlySpending from '../textures/ExpenseTracker/Monthly Spending.png';
+import expenseRegister from '../textures/ExpenseTracker/RegisterPage.png';
+import expenseRiskAnalysis from '../textures/ExpenseTracker/Spending Risk Analysis.png';
+import expenseTransactions from '../textures/ExpenseTracker/TransactionsPage.png';
+import expenseSpendingVsBudget from '../textures/ExpenseTracker/spending vs Budget.png';
+
+import movieAppHome from '../textures/MovieApp/MovieApp.png';
+import movieAppSearch from '../textures/MovieApp/MovieApp Search.png';
+import movieAppRegister from '../textures/MovieApp/MovieAppRegister.png';
+import movieAppPlaying from '../textures/MovieApp/MoviePlaying.png';
+import movieAppPlaying2 from '../textures/MovieApp/MoviePlaying2.png';
+
+import yahtzeeGame from '../textures/Yahtzee/YahtzeeGame.png';
+import yahtzeePlayerName from '../textures/Yahtzee/PlayerName.png';
+import yahtzeeJavaPlayers from '../textures/Yahtzee/JavaPlayers.png';
+import yahtzeeSession from '../textures/Yahtzee/GameSession.png';
+import yahtzeeExit from '../textures/Yahtzee/ExitGame.png';
+
+import ecommerceStart from '../textures/E-Commerce Shop/E-commerce start.png';
+import ecommerceShop from '../textures/E-Commerce Shop/E-commerce shop.png';
+import ecommerceInventory from '../textures/E-Commerce Shop/E-commerce inventory.png';
+import ecommerceCheckout from '../textures/E-Commerce Shop/Checkout.png';
+
+const expenseTrackerImages = [
+  { src: expenseLogin, alt: 'Expense Tracker – login screen' },
+  { src: expenseRegister, alt: 'Expense Tracker – register page' },
+  { src: expenseAccounts, alt: 'Expense Tracker – accounts page' },
+  { src: expenseTransactions, alt: 'Expense Tracker – transactions page' },
+  { src: expenseMonthlySpending, alt: 'Expense Tracker – monthly spending analysis' },
+  { src: expenseSpendingVsBudget, alt: 'Expense Tracker – spending vs budget' },
+  { src: expenseBudgets, alt: 'Expense Tracker – budgets page' },
+  { src: expenseRiskAnalysis, alt: 'Expense Tracker – spending risk analysis' },
+];
+
+const movieAppImages = [
+  { src: movieAppHome, alt: 'Movie App – home screen' },
+  { src: movieAppSearch, alt: 'Movie App – search' },
+  { src: movieAppRegister, alt: 'Movie App – register screen' },
+  { src: movieAppPlaying, alt: 'Movie App – now playing' },
+  { src: movieAppPlaying2, alt: 'Movie App – now playing detail' },
+];
+
+const yahtzeeImages = [
+  { src: yahtzeePlayerName, alt: 'Yahtzee Game – player name entry' },
+  { src: yahtzeeJavaPlayers, alt: 'Yahtzee Game – players list' },
+  { src: yahtzeeGame, alt: 'Yahtzee Game – board' },
+  { src: yahtzeeSession, alt: 'Yahtzee Game – active session' },
+  { src: yahtzeeExit, alt: 'Yahtzee Game – exit screen' },
+];
+
+const ecommerceImages = [
+  { src: ecommerceStart, alt: 'E-Commerce Shop – start screen' },
+  { src: ecommerceShop, alt: 'E-Commerce Shop – shop page' },
+  { src: ecommerceInventory, alt: 'E-Commerce Shop – inventory management' },
+  { src: ecommerceCheckout, alt: 'E-Commerce Shop – checkout' },
+];
 
 function Experience() {
   return (
@@ -44,9 +105,7 @@ function Experience() {
           <h2 className="Experience-section-heading">Projects</h2>
           <div className="Projects-grid">
             <div className="Project-card">
-              <div className="Project-thumbnail" aria-hidden="true">
-                <span>Screenshot coming soon</span>
-              </div>
+              <ProjectGallery images={expenseTrackerImages} />
               <div className="Project-body">
                 <h3>Expense Tracker Web Application</h3>
                 <p className="Project-stack">PHP · JavaScript · MySQL · HTML/CSS</p>
@@ -59,9 +118,7 @@ function Experience() {
             </div>
 
             <div className="Project-card">
-              <div className="Project-thumbnail" aria-hidden="true">
-                <span>Screenshot coming soon</span>
-              </div>
+              <ProjectGallery images={movieAppImages} />
               <div className="Project-body">
                 <h3>Movie App (iOS)</h3>
                 <p className="Project-stack">Swift · Firebase</p>
@@ -73,9 +130,7 @@ function Experience() {
             </div>
 
             <div className="Project-card">
-              <div className="Project-thumbnail" aria-hidden="true">
-                <span>Screenshot coming soon</span>
-              </div>
+              <ProjectGallery images={yahtzeeImages} />
               <div className="Project-body">
                 <h3>Yahtzee Game</h3>
                 <p className="Project-stack">Java</p>
@@ -88,9 +143,7 @@ function Experience() {
             </div>
 
             <div className="Project-card">
-              <div className="Project-thumbnail" aria-hidden="true">
-                <span>Screenshot coming soon</span>
-              </div>
+              <ProjectGallery images={ecommerceImages} />
               <div className="Project-body">
                 <h3>E-Commerce Shop</h3>
                 <p className="Project-stack">.NET MAUI · .NET 8.0 · JSON · C#</p>
