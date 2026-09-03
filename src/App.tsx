@@ -4,11 +4,11 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
 import Skills from './pages/Skills';
-import Services from './pages/Services';
 import Contact from './pages/Contact';
 import './css/App.css';
 
 function App() {
+
   return (
     <Router>
       <div className="App">
@@ -21,7 +21,6 @@ function App() {
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/Experience">Experience</Link></li>
                 <li><Link to="/skills">Skills</Link></li>
-                <li><Link to="/services">Services</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
             </div>
@@ -31,7 +30,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/services" element={<Services />} />
           <Route path="/Experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
