@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import About from './About';
 import profilePhoto from '../textures/William-Profile-Photo.png';
 import resumePdf from '../textures/William-Almaguer.pdf';
@@ -23,7 +24,7 @@ function Home() {
                     </div>
                     <div className="hero-buttons">
                         <a href={resumePdf} target="_blank" rel="noopener noreferrer" className= "btn">Download CV</a>
-                        <a href="/contact" className="btn">Contact Information</a>
+                        <Link to="/contact" className="btn">Contact Information</Link>
                     </div>
                     <div className="hero-social">
                         <img src={linkedinLogo} alt="My Linkedin" className="icon" onClick={() => window.open('https://www.linkedin.com/in/william-almaguer-b680432ab/', '_blank')} />
