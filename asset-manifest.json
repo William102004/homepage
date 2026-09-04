@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/homepage/static/css/main.de7a9dfd.css",
+    "main.js": "/homepage/static/js/main.12bb09a6.js",
+    "static/js/453.080f328d.chunk.js": "/homepage/static/js/453.080f328d.chunk.js",
+    "static/media/William-Profile-Photo.png": "/homepage/static/media/William-Profile-Photo.b748e9d8746de9f9d0c5.png",
+    "static/media/LoginScreen.png": "/homepage/static/media/LoginScreen.d3f267f31baf9be9200a.png",
+    "static/media/about-pic.png": "/homepage/static/media/about-pic.2ee5169965d916ee1cbe.png",
+    "static/media/MoviePlaying2.png": "/homepage/static/media/MoviePlaying2.f4ab1ae41865b5fceca0.png",
+    "static/media/William-Almaguer.pdf": "/homepage/static/media/William-Almaguer.f9bb86e9c2e23ca5fa9f.pdf",
+    "static/media/YahtzeeGame.png": "/homepage/static/media/YahtzeeGame.cb2b8a6805802fe337aa.png",
+    "static/media/GameSession.png": "/homepage/static/media/GameSession.445b0e54ae76cd1e43fb.png",
+    "static/media/MoviePlaying.png": "/homepage/static/media/MoviePlaying.9fcb4cb1d513b57f000a.png",
+    "static/media/Spending Risk Analysis.png": "/homepage/static/media/Spending Risk Analysis.ffbef1e17d84dd3b5c63.png",
+    "static/media/Budgets Page.png": "/homepage/static/media/Budgets Page.e865b51ec1c8ee381295.png",
+    "static/media/TransactionsPage.png": "/homepage/static/media/TransactionsPage.966fae8d047600f732a3.png",
+    "static/media/MovieApp.png": "/homepage/static/media/MovieApp.5327c86147ff8b221b44.png",
+    "static/media/spending vs Budget.png": "/homepage/static/media/spending vs Budget.2aa4281dc7da925759d9.png",
+    "static/media/Monthly Spending.png": "/homepage/static/media/Monthly Spending.a04d704d52bfe6b325a3.png",
+    "static/media/MovieApp Search.png": "/homepage/static/media/MovieApp Search.918864d985c96aeba692.png",
+    "static/media/MovieAppRegister.png": "/homepage/static/media/MovieAppRegister.f746c807e7b764631e5a.png",
+    "static/media/E-commerce shop.png": "/homepage/static/media/E-commerce shop.f77ef921593ced2094c9.png",
+    "static/media/E-commerce inventory.png": "/homepage/static/media/E-commerce inventory.d7aed07efa1ce84868e9.png",
+    "static/media/Checkout.png": "/homepage/static/media/Checkout.2e1a3b7d699d46b72df5.png",
+    "static/media/AccountsPage.png": "/homepage/static/media/AccountsPage.d0288acc6ebafa008abe.png",
+    "static/media/E-commerce start.png": "/homepage/static/media/E-commerce start.8ca49e88a2d7904da479.png",
+    "static/media/RegisterPage.png": "/homepage/static/media/RegisterPage.74cc3b57e00671a7e478.png",
+    "static/media/email.png": "/homepage/static/media/email.761df3bc69bdc631bd2f.png",
+    "static/media/PlayerName.png": "/homepage/static/media/PlayerName.37d38726b043d6950161.png",
+    "static/media/JavaPlayers.png": "/homepage/static/media/JavaPlayers.41d0a385a45cf8a6db5b.png",
+    "static/media/linkedin.png": "/homepage/static/media/linkedin.032cf8a63be2f0f4d425.png",
+    "static/media/ExitGame.png": "/homepage/static/media/ExitGame.c56a5d62da49a36d4e56.png",
+    "static/media/sas.svg": "/homepage/static/media/sas.2593c49a9047c9ce03f18dce2fc89e46.svg",
+    "index.html": "/homepage/index.html",
+    "main.de7a9dfd.css.map": "/homepage/static/css/main.de7a9dfd.css.map",
+    "main.12bb09a6.js.map": "/homepage/static/js/main.12bb09a6.js.map",
+    "453.080f328d.chunk.js.map": "/homepage/static/js/453.080f328d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de7a9dfd.css",
+    "static/js/main.12bb09a6.js"
+  ]
+}
