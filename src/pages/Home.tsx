@@ -24,7 +24,7 @@ function Home() {
                     </div>
                     <div className="hero-buttons">
                         <a href={resumePdf} target="_blank" rel="noopener noreferrer" className= "btn">Download CV</a>
-                        <Link to="/contact" className="btn">Contact Information</Link>
+                        <Link to="/homepage/contact" className="btn">Contact Information</Link>
                     </div>
                     <div className="hero-social">
                         <img src={linkedinLogo} alt="My Linkedin" className="icon" onClick={() => window.open('https://www.linkedin.com/in/william-almaguer-b680432ab/', '_blank')} />
