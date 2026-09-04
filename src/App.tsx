@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div className="My-Homepage">
         <header className="App-header">
           <nav id="main-navigation" className="main-navigation">
             <div className="logo">William</div>
