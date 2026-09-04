@@ -10,7 +10,7 @@ import './css/App.css';
 function App() {
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="My-Homepage">
         <header className="App-header">
           <nav id="main-navigation" className="main-navigation">
