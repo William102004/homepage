@@ -46,7 +46,7 @@ function Contact() {
             <img src={linkedin} alt="LinkedIn" />
             William Almaguer
           </a>
-          <a className="contact-card" href="https://github.com/williamalmaguer" target="_blank" rel="noopener noreferrer">
+          <a className="contact-card" href="https://github.com/William102004" target="_blank" rel="noopener noreferrer">
             <img src={github} alt="GitHub" />
             William102004
           </a>
